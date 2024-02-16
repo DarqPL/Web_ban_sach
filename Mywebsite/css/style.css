@@ -1,0 +1,28 @@
+h1 {
+    color: red;
+}
+#id1 {
+    background-color: aqua;
+}
+
+.csl1 {
+    border: solid 1px black;
+    color: blueviolet;
+    font-size: x-large;
+}
+
+h2,p,h3 {
+    background-color: violet;
+    color: white;
+}
+
+p:first-line {
+    color: red;
+    font-size: x-large;
+    font-style: italic;
+}
+
+#div1 {
+    background-color: yellow;
+    color: brown;
+}
