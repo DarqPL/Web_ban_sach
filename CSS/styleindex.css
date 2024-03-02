@@ -1,0 +1,19 @@
+.header {
+    background-color: rgb(26, 148, 255);
+}
+
+.category aside {
+    float: left;
+    background-color: rgb(26, 148, 255);
+    width: 15%;
+}
+
+.main {
+    padding-left: 18%;
+}
+
+.main section{
+    float: left;
+    width: 95%;
+    background-color: rgb(26, 148, 255);
+}
