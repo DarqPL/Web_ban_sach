@@ -1,6 +1,25 @@
+:root{
+    --main-background-color: rgb(26, 148, 255);
+}
 header {
     background-color: rgb(26, 148, 255);
 }
 .input-search{
     margin-top:1%;
+}
+div .catagory{
+    margin-top: 5%;
+    background-color: var(--main-background-color);
+    float: left;
+    width: 30%;
+}
+.catagory.row .col-lg-2{
+    display: block;
+    
+}
+.product {
+    margin-top: 5%;
+    background-color: var(--main-background-color);
+    float: right;
+    width: 70%;
 }
