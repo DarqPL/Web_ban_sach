@@ -7,6 +7,15 @@ header {
 .input-search{
     margin-top:1%;
 }
+/* Body */
+    /* Slide */
+.slide-show{
+    width: 50%;
+    margin: auto;
+    margin-top: 3%; 
+    height: 510px;
+    background-color: var(--main-background-color);
+}
 div .category{
     margin-top: 5%;
     background-color: var(--main-background-color);
