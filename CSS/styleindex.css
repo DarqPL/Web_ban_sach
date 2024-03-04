@@ -7,16 +7,13 @@ header {
 .input-search{
     margin-top:1%;
 }
-div .catagory{
+div .category{
     margin-top: 5%;
     background-color: var(--main-background-color);
     float: left;
     width: 30%;
 }
-.catagory.row .col-lg-2{
-    display: block;
-    
-}
+
 .product {
     margin-top: 5%;
     background-color: var(--main-background-color);
