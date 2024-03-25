@@ -49,3 +49,9 @@ header {
 #product .card h4{
     color: red;
 }
+footer{
+    text-align: center;
+    padding: 1%;
+    border: 1px solid black;
+    margin-top: 3%;
+}
