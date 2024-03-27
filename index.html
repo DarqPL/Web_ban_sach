@@ -10,25 +10,40 @@
     <link rel="stylesheet" href="CSS/styleindex.css">
 </head>
 <body>
-    <div class="container-fluid m-0 p-0">
-        <div class="header">
-            <div class="row">
-                <div class="col-lg-2 text-center"><img src="IMG/logo.png" alt=""></div>
-                <div class="col-lg-7 center">
-                    <div class="timKiem tK mt-2">
-                        <img class="icon-search" src="IMG/6fef2e788f00a16dc7d5a1dfc5d0e97a.png" alt="icon-search">
-                        <input type="text" data-view-id="main_search_form_input" value="" placeholder="Bạn tìm gì hôm nay" class="searchBar sB">
-                        <button data-view-id="main_search_form_button" class="searchButton sBtn">Tìm kiếm</button>
+    <div class="container-fluids">
+        <div class="container-fluid">
+            <div class="header">
+                <div class="row">
+                    <div class="col-lg-2 text-center"><img src="IMG/logo.png" alt=""></div>
+                    <div class="col-lg-7 center">
+                        <div class="timKiem tK mt-2">
+                            <img class="icon-search" src="IMG/6fef2e788f00a16dc7d5a1dfc5d0e97a.png" alt="icon-search">
+                            <input type="text" data-view-id="main_search_form_input" value="" placeholder="Bạn tìm gì hôm nay" class="searchBar sB">
+                            <button data-view-id="main_search_form_button" class="searchButton sBtn">Tìm kiếm</button>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="row">
-                        <div class="col">Đăng ký</div>
-                        <div class="col">Đăng nhập</div>
-                        <div class="col">Giỏ hàng</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">Giao đến:</div>
+                    <div class="col-lg-3">
+                        <div class="row">
+                            <div data-view-id="header_user_shortcut" class="option">
+                                <div class="trangChu">
+                                    <img src="IMG/home.png" alt="header_menu_item_home">
+                                    <a rel="nofollow">Trang chủ</a>
+                                </div>
+                                <div data-view-id="header_header_account_container" class="taiKhoan">
+                                    <img src="IMG/smile.png" alt="header_header_account_img">
+                                    <span>Tài khoản</span>
+                                </div>
+                                <div class="cart">
+                                    <a data-view-id="header_user_shortcut_cart" href="#" rel="nofollow">
+                                        <div class="trangChu taiKhoan">
+                                            <div class="cart-wrapper">
+                                                <img class="cart-icon" src="IMG/cart.png" alt="header_header_img_Cart">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,9 +132,9 @@
                             <h5>Đừng Ngồi Chờ Chết Trong Gió Bảo-Giang Minh</h5>
                             <p class="card-text">Bạn cảm thấy cuộc sống đan xen với sóng gió, chỉ là vì bạn vẫn đang ngồi chờ chết trong bão táp mà thôi!</p>
                             <h4>61,700đ</h4>
-                        <div class="card-footer">
-                            <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
-                        </div>
+                            <div class="card-footer">
+                                <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -134,7 +149,9 @@
                             <p class="card-text">“Tâm lý học tội phạm” là bộ sách gồm 2 tập đề cập đến quyền lựa chọn, ý chí tự do, cái thiện và cái ác, 
                                 phản ứng trước cám dỗ và sự thể hiện lòng dũng cảm hay hèn nhát khi đối mặt với nghịch cảnh của con người</p>
                             <h4>35,000đ</h4>
-                            <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                            <div class="card-footer">
+                                <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -146,7 +163,9 @@
                             <p class="card-text">Bằng giọng văn sắc bén, “Tâm lý học tội phạm – phác họa chân dung kẻ phạm tội” hứa hẹn dẫn dắt người đọc đi qua các cung bậc cảm xúc từ tò mò, ngạc nhiên đến sợ hãi, hoang mang tận cùng. Chúng ta sẽ lần tìm về quá khứ để từng bước gỡ những nút thắt chưa được giải, 
                                 khiến ta “ngạt thở” đọc tới tận trang cuối cùng.</p>
                             <h4>80,000đ</h4>
-                            <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                            <div class="card-footer">
+                                <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -158,7 +177,9 @@
                             <p class="card-text">Ấn bản đầu tiên của cuốn sách “Tâm lý học tội phạm” được xuất bản năm 1984, và ấn bản thứ hai xuất bản năm 2004. Sau một thập kỷ, và đã đến lúc bổ sung thêm các thông tin cho cuốn sách này. Trong ấn bản này, bạn sẽ hiểu chi tiết về các quá trình tư duy và chiến thuật phổ biến đối với những kẻ phạm tội, 
                                 bất kể lý lịch hay tội ác của chúng.</p>
                             <h4>61,700đ</h4>
-                            <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                            <div class="card-footer">
+                                <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -172,7 +193,9 @@
                             <h5>Sách - Vở ô li có mẫu chữ lớp 1 - Cánh Diều - Quyển 1</h5>
                             <p class="card-text"></p>
                             <h4>35,000đ</h4>
-                            <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                            <div class="card-footer">
+                                <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -183,7 +206,9 @@
                             <h5>Sách - Thực hành luyện viết lớp 1 (Cánh Diều) - Thúy Hà - Quyển 1</h5>
                             <p class="card-text"></p>
                             <h4>80,000đ</h4>
-                            <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                            <div class="card-footer">
+                                <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -194,7 +219,9 @@
                             <h5>Sách – Vở ô li Bài tập toán lớp 1 – Cánh Diều – Quyển 1</h5>
                             <p class="card-text"></p>
                             <h4>61,700đ</h4>
-                            <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                            <div class="card-footer">
+                                <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
