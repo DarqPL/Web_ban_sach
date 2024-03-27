@@ -75,6 +75,10 @@ footer{
     margin:0 0 0 18px;
 }
 
+data-styled.g763[id="timKiem"]{
+        content:"tK,"
+}
+
 .sB{
     border:0px;
     padding:0 8px;
@@ -107,6 +111,10 @@ footer{
 .sB::placeholder{
     color:#808089;
     font-size:16px;
+}
+
+data-styled.g764[id="searchBar"]{
+    content:"sB,"
 }
 
 .sBtn{
@@ -155,6 +163,10 @@ footer{
     background-color:rgba(10,104,255,0.4);
 }
 
+data-styled.g765[id="searchButton"]{
+    content:"sBtn,"
+}
+
 .option{
     display:-webkit-box;
     display:-webkit-flex;
@@ -193,6 +205,8 @@ footer{
     margin-right:0;
     border-radius:unset;
 }
+
+data-styled.g782[id="option"]{content:"option,"}/*!sc*/
 
 .trangChu{
     display:-webkit-box;
@@ -282,6 +296,8 @@ footer{
     display:block;
 }
 
+data-styled.g786[id="trangChu,taiKhoan"]{content:"trangChu,taiKhoan,"}
+
 .cart{
     position:relative;
     display:block;
@@ -290,3 +306,21 @@ footer{
 .cart:hover{
     opacity:1;
 }
+
+.xeDay{
+    padding:0 !important;
+    margin-left:24px;
+    position:relative;
+}/*!sc*/
+.xeDay:before{
+    content:'';
+    display:block;
+    height:20px;
+    position:absolute;
+    left:-12px;
+    border:1px solid #EBEBF0;
+}/*!sc*/
+
+data-styled.g787[id="xeDay"]{
+    content:"xeDay,"
+}/*!sc*/
