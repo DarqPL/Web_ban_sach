@@ -307,11 +307,14 @@ data-styled.g786[id="trangChu,taiKhoan"]{content:"trangChu,taiKhoan,"}
     opacity:1;
 }
 
+data-styled.g781[id="cart"]{content:"cart,"}
+
 .xeDay{
     padding:0 !important;
     margin-left:24px;
     position:relative;
-}/*!sc*/
+}
+
 .xeDay:before{
     content:'';
     display:block;
@@ -319,8 +322,8 @@ data-styled.g786[id="trangChu,taiKhoan"]{content:"trangChu,taiKhoan,"}
     position:absolute;
     left:-12px;
     border:1px solid #EBEBF0;
-}/*!sc*/
+}
 
 data-styled.g787[id="xeDay"]{
     content:"xeDay,"
-}/*!sc*/
+}
