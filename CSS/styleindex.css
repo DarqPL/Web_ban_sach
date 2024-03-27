@@ -55,3 +55,114 @@ footer{
     border: 1px solid black;
     margin-top: 3%;
 }
+
+.tK{
+    width:100%;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    position:relative;
+    border:1px solid #DDDDE3;
+    border-radius:8px;
+    -webkit-align-items:center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+}
+
+.tK .icon-search{
+    width:20px;
+    height:20px;
+    margin:0 0 0 18px;
+}
+
+data-styled.g763[id="timKiem"]{
+        content:"tK,"
+}
+
+.sB{
+    border:0px;
+    padding:0 8px;
+    font-weight:400;
+    font-size:14px;
+    line-height:150%;
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px;
+    -webkit-flex:1;
+    -ms-flex:1;
+    flex:1;
+    outline:none;
+}
+
+.sB::-webkit-input-placeholder{
+    color:#808089;
+    font-size:14px;
+}
+
+.sB::-moz-placeholder{
+    color:#808089;
+    font-size:14px;
+}
+
+.sB:-ms-input-placeholder{
+    color:#808089;
+    font-size:14px;
+}
+
+.sB::placeholder{
+    color:#808089;
+    font-size:14px;
+}
+
+data-styled.g764[id="searchBar"]{
+    content:"sB,"
+}
+
+.sBtn{
+    cursor:pointer;
+    border:0px;
+    width:92px;
+    height:38px;
+    padding:4px;
+    border-radius:0 8px 8px 0;
+    background:transparent;
+    color:#0A68FF;
+    font-weight:400;
+    font-size:14px;
+    line-height:150%;
+    outline:none;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-align-items:center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    position:relative;
+}
+
+.sBtn:before{
+    content:'';
+    display:block;
+    position:absolute;
+    border-left:1px solid #DDDDE3;
+    height:24px;
+    left:0;
+    top:8px;
+}
+
+.sBtn:hover{
+    background-color:rgba(10,104,255,0.2);
+}
+
+.sBtn:active{
+    background-color:rgba(10,104,255,0.4);
+}
+
+data-styled.g765[id="searchButton"]{content:"sBtn,"}/*!sc*/
