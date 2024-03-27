@@ -75,10 +75,6 @@ footer{
     margin:0 0 0 18px;
 }
 
-data-styled.g763[id="timKiem"]{
-        content:"tK,"
-}
-
 .sB{
     border:0px;
     padding:0 8px;
@@ -111,10 +107,6 @@ data-styled.g763[id="timKiem"]{
 .sB::placeholder{
     color:#808089;
     font-size:16px;
-}
-
-data-styled.g764[id="searchBar"]{
-    content:"sB,"
 }
 
 .sBtn{
@@ -161,10 +153,6 @@ data-styled.g764[id="searchBar"]{
 
 .sBtn:active{
     background-color:rgba(10,104,255,0.4);
-}
-
-data-styled.g765[id="searchButton"]{
-    content:"sBtn,"
 }
 
 .option{
