@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TokoToko - Web bán sách chất lượng</title>
+    <link rel="stylesheet" href="../CSS/styleindex.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid m-0 p-0">
+        <div class="header">
+            <div class="row">
+                <div class="col-lg-2 border"><img src="../IMG/logo.png" alt=""></div>
+                <div class="col-lg-7 border center">
+                    <input type="text" placeholder="Tìm kiếm" class="input-search" style="width: 90%; ">
+                    <button>Tìm kiếm</button>
+                </div>
+                <div class="col-lg-3 border">
+                    <div class="row">
+                        <div class="col">Đăng ký</div>
+                        <div class="col">Đăng nhập</div>
+                        <div class="col">Giỏ hàng</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Giao đến:</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-sm bg-info">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="collapseNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="../HTML/index.html" class="nav-link">Trang Chủ</a></li>
+                        <li class="nav-item"><a href="#product" class="nav-link">Danh sách sản phẩm</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Danh Mục</a>
+                            <ul class="dropdown-menu bg-info">
+                                <li><a href="" class="dropdown-item">Sách Kinh Tế</a></li>
+                                <li><a href="" class="dropdown-item">Sách Kỹ Năng</a></li>
+                                <li><a href="" class="dropdown-item">Sách Giải Trí</a></li>
+                                <li><a href="" class="dropdown-item">Sách Giáo Khoa</a></li>
+                                <li><a href="" class="dropdown-item">Sách Văn Học</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#aboutus" class="nav-link">About us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="slide-show ">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../IMG/HinhanhSales.jpg" class="d-block" style="width: 100%;" alt="Slide1" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../IMG/Olaf The Snowman.jpg" class="d-block" width="100%" height="510px" alt="Slide2" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../IMG/th.jpg" class="d-block" width="100%" height="510px" alt="Slide3" />
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div> 
+        <!-- san pham -->  
+        <div class="container mt-3" id="product">
+            <h2>Các sản phẩm</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width:100%; height: 100%;">
+                        <img src="../IMG/de-men-phieu-luu-ky_resize.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Dế mèn phiêu lưu ký</h5>
+                            <p class="card-text">“Biết ước mơ và hành động, Dế mèn của tôi chắc chắn là bạn trung thủy với thế hệ tuổi thơ của bạn.”</p>
+                            <h4>35,000đ</h4>
+                            <div class="card-footer">
+                                <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width:100%; height: 100%;">
+                        <img src="../IMG/su-im-lang-cua-bay-cuu-800x800-1.jpg" height="415px" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Sự im lặng của bày cừu</h5>
+                            <p class="card-text"></p>
+                            <h4>80,000đ</h4>
+                            <div class="card-footer">
+                                <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width:100%; height: 100%;">
+                        <img src="../IMG/cho-chet-trong-gio-bao.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Đừng Ngồi Chờ Chết Trong Gió Bảo-Giang Minh</h5>
+                            <p class="card-text">Bạn cảm thấy cuộc sống đan xen với sóng gió, chỉ là vì bạn vẫn đang ngồi chờ chết trong bão táp mà thôi!</p>
+                            <h4>61,700đ</h4>
+                        <div class="card-footer">
+                            <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card" style="width:100%; height: 100%;">
+                        <img src="../IMG/tam-ly-hoc-toi-pham-tap-2.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Tâm Lý Học Tội Phạm Tập 2</h5>
+                            <p class="card-text">“Tâm lý học tội phạm” là bộ sách gồm 2 tập đề cập đến quyền lựa chọn, ý chí tự do, cái thiện và cái ác, 
+                                phản ứng trước cám dỗ và sự thể hiện lòng dũng cảm hay hèn nhát khi đối mặt với nghịch cảnh của con người</p>
+                            <h4>35,000đ</h4>
+                            <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width:100%; height: 100%;">
+                        <img src="../IMG/tam-ly-hoc-phac-hoa-chan-dung.jpg"alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Tâm Lý Học - Phác Họa Chân Dung Kẻ Phạm Tội</h5>
+                            <p class="card-text">Bằng giọng văn sắc bén, “Tâm lý học tội phạm – phác họa chân dung kẻ phạm tội” hứa hẹn dẫn dắt người đọc đi qua các cung bậc cảm xúc từ tò mò, ngạc nhiên đến sợ hãi, hoang mang tận cùng. Chúng ta sẽ lần tìm về quá khứ để từng bước gỡ những nút thắt chưa được giải, 
+                                khiến ta “ngạt thở” đọc tới tận trang cuối cùng.</p>
+                            <h4>80,000đ</h4>
+                            <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width:100%; height: 100%;">
+                        <img src="../IMG/tam-ly-hoc-toi-pham.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Tâm Lý Học Tội Phạm – Tập 1</h5>
+                            <p class="card-text">Ấn bản đầu tiên của cuốn sách “Tâm lý học tội phạm” được xuất bản năm 1984, và ấn bản thứ hai xuất bản năm 2004. Sau một thập kỷ, và đã đến lúc bổ sung thêm các thông tin cho cuốn sách này. Trong ấn bản này, bạn sẽ hiểu chi tiết về các quá trình tư duy và chiến thuật phổ biến đối với những kẻ phạm tội, 
+                                bất kể lý lịch hay tội ác của chúng.</p>
+                            <h4>61,700đ</h4>
+                            <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card" style="width:100%; height: 100%;">
+                        <img src="../IMG/Sach-Vo-o-li-co-mau-chu-lop-1-Canh-Dieu-Q1-2.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Sách - Vở ô li có mẫu chữ lớp 1 - Cánh Diều - Quyển 1</h5>
+                            <p class="card-text"></p>
+                            <h4>35,000đ</h4>
+                            <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width:100%; height: 100%;">
+                        <img src="../IMG/Sach-Thuc-hanh-luyen-viet-lop-1-Canh-Dieu-Q1-1.jpg" height="415px" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Sách - Thực hành luyện viết lớp 1 (Cánh Diều) - Thúy Hà - Quyển 1</h5>
+                            <p class="card-text"></p>
+                            <h4>80,000đ</h4>
+                            <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width:100%; height: 100%;">
+                        <img src="../IMG/Sach-Vo-o-li-Bai-tap-toan-lop-1-Canh-Dieu.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Sách – Vở ô li Bài tập toán lớp 1 – Cánh Diều – Quyển 1</h5>
+                            <p class="card-text"></p>
+                            <h4>61,700đ</h4>
+                            <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="row">
+                <div class="col-md-3" id="aboutus">Về chúng tôi: <br><span>Chúng tôi là công ty cổ phần Toko.
+                    Trụ sở tọa lạc tại TpHCM</span></div>
+                <div class="col-md-3 border">Liên hệ chúng tôi qua:</div>
+                <div class="col-md-3 border">Hổ trợ khách hàng</div>
+                <div class="col-md-3 border">Phương thức thanh toán
+                    <img src="../IMG/method.png" alt="method">
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
