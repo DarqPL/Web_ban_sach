@@ -1,7 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
 :root{
@@ -10,10 +9,6 @@
 header {
     background-color: rgb(26, 148, 255);
 }
-/* Nav */
-
-/* Body */
-    /* Slide */
 .slide-show{
     width: 50%;
     margin: auto;
@@ -21,18 +16,16 @@ header {
     height: 510px;
     background-color: var(--main-background-color);
 }
-/* div .category{
-    margin-top: 5%;
-    background-color: var(--main-background-color);
-    float: left;
-    width: 30%;
-} */
+
 
 #product {
     margin-top: 5%;
     background-color: var(--main-background-color);
     margin: auto;
-    padding: auto;
+}
+#product h3{
+    color: white;
+    margin-top: 3%;
 }
 #product h2{
     color: white;
