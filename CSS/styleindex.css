@@ -40,12 +40,40 @@ header {
 #product .card h4{
     color: red;
 }
-
 footer{
     text-align: center;
     padding: 1%;
     border: 1px solid black;
     margin-top: 3%;
+    background-color: var(--main-background-color);
+}
+.footer .lh{
+    margin-top: 20px;
+}
+.footer .lh li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 50px; 
+}
+.footer .lh li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .lh li a:hover{
+    color: black;
+}
+.footer .ht li{
+    list-style-type: none;
+    text-align: center;
+}
+.footer .ht li a{
+    text-decoration: none;
+    color: white;
+}
+.footer .ht li a:hover{
+    color: black;
+    
 }
 
 .tK{
