@@ -10,11 +10,12 @@ header {
     background-color: rgb(26, 148, 255);
 }
 .slide-show{
-    width: 50%;
+    width: 95%;
     margin: auto;
     margin-top: 3%; 
-    height: 510px;
+    height: 1%;
     background-color: var(--main-background-color);
+    text-align: center;
 }
 
 
@@ -349,3 +350,7 @@ data-styled.g786[id="Userstyle__MenuItemRevamp-sc-6e6am-19"]{content:"fUChpf,bhX
 .iZYkSb{padding:0 !important;margin-left:24px;position:relative;}/*!sc*/
 .iZYkSb:before{content:'';display:block;height:20px;position:absolute;left:-12px;border:1px solid #EBEBF0;}/*!sc*/
 data-styled.g787[id="Userstyle__CartItemInnerRevamp-sc-6e6am-20"]{content:"iZYkSb,"}/*!sc*/
+
+.carousel-inner img{
+    height: 600px;
+}
