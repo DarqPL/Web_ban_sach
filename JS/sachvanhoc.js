@@ -1,22 +1,46 @@
-
-let maxitem=4;
-let str="";
-fetch("../../data/sachvanhoc.json").then(res=>res.json()).then(data=>{
-    for(var i=0;i<data.length;i++){
-        let item=data[i];
-        if(i==maxitem) break;
-        str+=`<div class="col-md-3" id="${item.id}" onclick='hienthi("${item.id}")'>
+$(document).ready(function(){
+    //Load 4 sản phẩm sách văn học vào trang chủ
+    $.getJSON('data/sachvanhoc.json',function(data){
+        for(let i=0;i<data.length;i++){
+            let item = data[i];
+            if(i==4) break;
+            $("#sachvanhoc").append(`<div class="col-md-3" id="${item.id}" onclick='hienthi("${item.id}")'>
         <div class="card" style="width:100%; height: 100%;">
-            <img src="${item.img}" height="415px" alt="" class="card-img-top">
-            <div class="card-body">
-                <h5>${item.name}</h5>
-                <h4>$${item.gia}</h4>
-                <div class="card-footer">
-                    <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                <img src="${item.img}" height="415px" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5>${item.name}</h5>
+                    <h4>$${item.gia}</h4>
+                    <div class="card-footer">
+                        <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>`
-    }
-    document.getElementById("sachvanhoc").innerHTML=str;   
+        </div>`)
+        }
+    });
+
+//load khi click vào danh mục sách văn học
+    $("#dmsachvanhoc").click(function(event){
+        event.preventDefault();
+        window.location.href = "../page/danhmuc.html";
+    });
+    document.getElementById("dsproduct").innerHTML = "";
+    $.getJSON('../data/sachvanhoc.json',function(data){
+        for(let i=0;i<data.length;i++){
+            let item = data[i];
+            $("#dsproduct").append(`<div class="col-md-3 mt-3" id="${item.id}" onclick='hienthi("${item.id}")'>
+        <div class="card" style="width:100%; height: 100%;">
+                <img src="${item.img}" height="415px" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5>${item.name}</h5>
+                    <h4>$${item.gia.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</h4>
+                    <div class="card-footer">
+                        <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                    </div>
+                </div>
+            </div>
+        </div>`)
+        }
+    });
+    
 })

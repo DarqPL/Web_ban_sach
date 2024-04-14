@@ -9,7 +9,7 @@
     <script src="JS/jquery-3.7.1.min.js"></script>
     <script src="JS/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="CSS/styleindex.css">
-    <link rel="stylesheet" href="../fontawesome/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome-free-6.5.2-web/css/all.min.css">
     <script src="js/index.js"></script>
 </head>
 <body>
@@ -105,7 +105,6 @@
                 </button>
                 <div class="collapse navbar-collapse " id="collapseNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="HTML/index.html" class="nav-link">Trang Chủ</a></li>
                         <li class="nav-item"><a href="#product" class="nav-link">Danh sách sản phẩm</a></li>
                         <li class="nav-item dropdown">
                             <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Danh Mục</a>
@@ -113,8 +112,8 @@
                                 <li><a href="" class="dropdown-item">Sách Kinh Tế</a></li>
                                 <li><a href="" class="dropdown-item">Sách Kỹ Năng</a></li>
                                 <li><a href="" class="dropdown-item">Sách Giải Trí</a></li>
-                                <li><a href="" class="dropdown-item">Sách Giáo Khoa</a></li>
-                                <li><a href="" class="dropdown-item">Sách Văn Học</a></li>
+                                <li><a href="" class="dropdown-item" id="dmsachgiaokhoa">Sách Giáo Khoa</a></li>
+                                <li><a href="" class="dropdown-item" id="dmsachvanhoc">Sách Văn Học</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a href="page/aboutus.html" class="nav-link">About us</a></li>
@@ -203,49 +202,10 @@
 
             <h3>Sách Giáo Khoa</h3>
             <hr>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card" style="width:100%; height: 100%;">
-                        <img src="IMG/Sach-Vo-o-li-co-mau-chu-lop-1-Canh-Dieu-Q1-2.jpg" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h5>Sách - Vở ô li có mẫu chữ lớp 1 - Cánh Diều - Quyển 1</h5>
-                            <p class="card-text"></p>
-                            <h4>35,000đ</h4>
-                            <div class="card-footer">
-                                <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card" style="width:100%; height: 100%;">
-                        <img src="IMG/Sach-Thuc-hanh-luyen-viet-lop-1-Canh-Dieu-Q1-1.jpg" height="415px" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h5>Sách - Thực hành luyện viết lớp 1 (Cánh Diều) - Thúy Hà - Quyển 1</h5>
-                            <p class="card-text"></p>
-                            <h4>80,000đ</h4>
-                            <div class="card-footer">
-                                <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card" style="width:100%; height: 100%;">
-                        <img src="IMG/Sach-Vo-o-li-Bai-tap-toan-lop-1-Canh-Dieu.jpg" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h5>Sách – Vở ô li Bài tập toán lớp 1 – Cánh Diều – Quyển 1</h5>
-                            <p class="card-text"></p>
-                            <h4>61,700đ</h4>
-                            <div class="card-footer">
-                                <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row mt-4" id="sachgiaokhoa">
+                
             </div>
         </div>
-        
         <footer class="footer bg-info">
             <div class="row gap-4 gap-lg-0">
                 <div class="col-md-3" id="aboutus">Về chúng tôi: <br><span>Chúng tôi là công ty cổ phần Toko.
@@ -261,7 +221,7 @@
                         <li><a href="https://www.instagram.com/">
  
                             <i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i> </a></li>
+                        <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 ">Hổ trợ khách hàng
@@ -275,7 +235,7 @@
                     </ul>
                 </div>
                 <div class="col-md-3  ">Phương thức thanh toán <br>
-                    <img src="../IMG/method.png" alt="method">
+                    <img src="IMG/method.png" alt="method">
                 </div>
             </div>
         </footer>

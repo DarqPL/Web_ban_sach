@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <script src="../JS/jquery-3.7.1.min.js"></script>
     <script src="../JS/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../CSS/aboutus.css">
+    <link rel="stylesheet" href="../CSS/danhmuc.css">
     <link rel="stylesheet" href="../fontawesome/fontawesome-free-6.5.2-web/css/all.min.css">
+    <script src="../JS/sachvanhoc.js"></script>
 </head>
 <body>
-    <div class="container-fluids">
+    <div class="container-fluid">
         <div class="container-fluid">
             <div class="header">
                 <div class="row">
@@ -56,7 +57,7 @@
                 </button>
                 <div class="collapse navbar-collapse " id="collapseNav">
                     <ul class="navbar-nav">
-                        <!-- <li class="nav-item"><a href="HTML/index.html" class="nav-link">Trang Chủ</a></li> -->
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Trang Chủ</a></li>
                         <li class="nav-item"><a href="#product" class="nav-link">Danh sách sản phẩm</a></li>
                         <li class="nav-item dropdown">
                             <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Danh Mục</a>
@@ -65,7 +66,7 @@
                                 <li><a href="" class="dropdown-item">Sách Kỹ Năng</a></li>
                                 <li><a href="" class="dropdown-item">Sách Giải Trí</a></li>
                                 <li><a href="" class="dropdown-item">Sách Giáo Khoa</a></li>
-                                <li><a href="" class="dropdown-item" id="dmsachvanhoc">Sách Văn Học</a></li>
+                                <li><a href="" class="dropdown-item">Sách Văn Học</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a href="../page/aboutus.html" class="nav-link">About us</a></li>
@@ -73,50 +74,9 @@
                 </div>
             </div>
         </nav>
-        <section class="container fw-medium">
-            <div class="row">
-                <div class="col col-12 col-md-8 mx-auto py-md-4 bg-white px-md-4">
-                    <h3 class="text-center fw-semibold text-main mb-4">Giới thiệu về website ToKo</h3>
-                <div>
-                <div>
-                    <h4>1. Giới thiệu về đề tài</h4>
-                    <p>Websitge này là bài tập lớn môn Hệ thống và công nghệ Web của IUH năm 2024 với
-                    chủ đề là "Website giới thiệu, bán sách". Nhóm mình đã dựa trên website <a
-                        href="https://tiki.vn/nha-sach-tiki/c8322" class="text-primary">tiki.vn</a> để tạo ra 1 phiên bản thu nhỏ.</p>
-                    
-                    <p>Website bán sách là nơi bạn có thể tìm mua các loại sách khác nhau tùy thuộc vào nhu cầu của cá nhân bạn</p>
-                </div>
-            <!-- thanhvienthuchien -->
-            <div>
-                <h4 class="mb-4">2. Thành viên thực hiện</h4>
-                <p>Nhóm thực hiện bao gồm 2 thành viên:</p>
-                <div class="row gap-2 gap-lg-0">
-                  <div class="col col-12 col-md-6">
-                    <div class="card mx-auto" style="width: 18rem;">
-                      <img src="../IMG/infor/z5330619618016_daeb33562f9ea005717c9fc77d6e7b3f.jpg" class="card-img-top object-fit-cover" alt="" style="height: 300px">
-                      <div class="card-body">
-                        <h5 class="card-title">Đặng Trần Tấn Phát <span class="text-12 textp">22649051</span></h5>
-                        <p class="card-text" style="min-height: 80px;">Tìm kiếm xây dựng nguồn dữ liệu, hình ảnh đa dạng để đưa vào các trang của website, kiểm thử sản phẩm.</p>
-                        <div class="d-flex gap-2"><a href="https://github.com/WestTand" class="btn btn-dark w-50"> Github</a>
-                          <a href="https://www.facebook.com/profile.php?id=100009307655746" class="btn btn-primary w-50"> Facebook</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-md-6">
-                    <div class="card mx-auto" style="width: 18rem;">
-                      <img src="../img/info/nam.jpg" class="card-img-top object-fit-cover" alt="" style="height: 300px">
-                      <div class="card-body">
-                        <h5 class="card-title">Huỳnh Ánh Hưng <span class="text-12 textp">226495171</span></h5>
-                        <p class="card-text" style="min-height: 80px;">Nghiên cứu, xây dựng giao diện, thực hiện các chức năng, cấu trục dự án để hệ thống hoạt động 1 cách ổn định nhất.</p>
-                        <div class="d-flex gap-2"><a href="https://github.com/DarqPL" class="btn btn-dark w-50">Github</a>
-                          <a href="https://www.facebook.com/DarqPL456" class="btn btn-primary w-50"> Facebook</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <section class="container-fluid" id="product">
+            <div class="row" id="dsproduct">
+
             </div>
         </section>
         <footer class="footer bg-info">
@@ -134,7 +94,7 @@
                         <li><a href="https://www.instagram.com/">
  
                             <i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i> </a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 ">Hổ trợ khách hàng
