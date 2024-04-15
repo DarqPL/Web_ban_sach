@@ -45,23 +45,21 @@ $(document).ready(function(){
 let soluong=0;
 let arrcart = [];
 function addCart(objSP){
-    alert(objSP);
-    console.log(objSP);
     var sp = JSON.parse(objSP);
     let flag = false;
     let item ;
     for(let i=0;i<arrcart.length;i++){
-       if(arrcart[i].sp.ma==sp.ma){
+       if(arrcart[i].sp.id==sp.id){
             flag = true;
-            addCart[i].qty++;
+            arrcart[i].qty++;
             break;
        }
     }
     if(flag==false){
-       let cartitem ={sp: sp, qty:1};
+       let cartitem ={sp:sp, qty:1};
          arrcart.push(cartitem);
     }
     soluong++;
+    document.getElementById('cartSL').innerHTML = soluong;
     localStorage.setItem('mycart',JSON.stringify(arrcart));
-
 }
