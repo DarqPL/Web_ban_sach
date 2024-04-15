@@ -71,17 +71,5 @@
         "mota":"Câu chuyện mở ra sẽ là bất ngờ với bạn đọc “ruột” của Nguyễn Nhật Ánh, và kết thúc trong một sự dịu dàng nhẹ nhõm lòng, bởi nhà văn đã nhắc lại cho ta nhớ: cuộc sống luôn thật là tươi đẹp biết bao. Khép sách lại, bạn sẽ nhận được niềm vui bình yên."
         ,"soluong":100,
         "theloai":"Sách văn học"
-    },{
-        "id":10,
-        "name":"360 động từ bất quy tắc"
-        ,"gia": 16000,
-        "img":"../IMG/sachgiaokhoa/360-dong-tu-bat-quy-tac.jpg",
-        "theloai":"Sách giáo khoa"
-    },{
-        "id":11,
-        "name":"Sách - Luyện đọc 1 - kết nối tri thức"
-        ,"gia": 31000,
-        "img":"..IMG/sachgiaokhoa/Sach-Luyen-doc-1-ket-noi-tri-thuc.jpg",
-        "theloai":"Sách giáo khoa"
     }
 ]

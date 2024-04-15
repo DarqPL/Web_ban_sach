@@ -2,16 +2,17 @@ $(document).ready(function(){
     //Load 4 sản phẩm sách văn học vào trang chủ
     $.getJSON('data/sachvanhoc.json',function(data){
         for(let i=0;i<data.length;i++){
+            var obj = JSON.stringify(data[i]);
             let item = data[i];
             if(i==4) break;
-            $("#sachvanhoc").append(`<div class="col-md-3" id="${item.id}" onclick='hienthi("${item.id}")'>
+            $("#sachvanhoc").append(`<div class="col-md-3" id="${item.id}")'>
         <div class="card" style="width:100%; height: 100%;">
                 <img src="${item.img}" height="415px" alt="" class="card-img-top">
                 <div class="card-body">
                     <h5>${item.name}</h5>
-                    <h4>$${item.gia}</h4>
+                    <h4>${item.gia.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</h4>
                     <div class="card-footer">
-                        <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                    <input type="button" value="Đặt Hàng" class="btn btn-success"onclick=\'addCart(\`${obj}\`)\'>
                     </div>
                 </div>
             </div>
@@ -20,27 +21,47 @@ $(document).ready(function(){
     });
 
 //load khi click vào danh mục sách văn học
-    $("#dmsachvanhoc").click(function(event){
-        event.preventDefault();
-        window.location.href = "../page/danhmuc.html";
-    });
-    document.getElementById("dsproduct").innerHTML = "";
     $.getJSON('../data/sachvanhoc.json',function(data){
         for(let i=0;i<data.length;i++){
+            var obj = JSON.stringify(data[i]);
             let item = data[i];
             $("#dsproduct").append(`<div class="col-md-3 mt-3" id="${item.id}" onclick='hienthi("${item.id}")'>
         <div class="card" style="width:100%; height: 100%;">
                 <img src="${item.img}" height="415px" alt="" class="card-img-top">
                 <div class="card-body">
                     <h5>${item.name}</h5>
-                    <h4>$${item.gia.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</h4>
+                    <h4>${item.gia.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</h4>
                     <div class="card-footer">
-                        <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
+                    <button type="button" value="Đặt hàng" class="btn btn-success" onclick=\'addCart(\`${obj}\`)\'></button>
                     </div>
                 </div>
             </div>
         </div>`)
         }
+
     });
     
 })
+let soluong=0;
+let arrcart = [];
+function addCart(objSP){
+    alert(objSP);
+    console.log(objSP);
+    var sp = JSON.parse(objSP);
+    let flag = false;
+    let item ;
+    for(let i=0;i<arrcart.length;i++){
+       if(arrcart[i].sp.ma==sp.ma){
+            flag = true;
+            addCart[i].qty++;
+            break;
+       }
+    }
+    if(flag==false){
+       let cartitem ={sp: sp, qty:1};
+         arrcart.push(cartitem);
+    }
+    soluong++;
+    localStorage.setItem('mycart',JSON.stringify(arrcart));
+
+}

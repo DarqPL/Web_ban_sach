@@ -110,10 +110,8 @@
                             <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Danh Mục</a>
                             <ul class="dropdown-menu bg-info">
                                 <li><a href="" class="dropdown-item">Sách Kinh Tế</a></li>
-                                <li><a href="" class="dropdown-item">Sách Kỹ Năng</a></li>
-                                <li><a href="" class="dropdown-item">Sách Giải Trí</a></li>
-                                <li><a href="" class="dropdown-item" id="dmsachgiaokhoa">Sách Giáo Khoa</a></li>
-                                <li><a href="" class="dropdown-item" id="dmsachvanhoc">Sách Văn Học</a></li>
+                                <li><a href="page/danhmucSachGiaoKhoa.html" class="dropdown-item" id="dmsachgiaokhoa">Sách Giáo Khoa</a></li>
+                                <li><a href="page/danhmucVanHoc.html" class="dropdown-item" id="dmsachvanhoc">Sách Văn Học</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a href="page/aboutus.html" class="nav-link">About us</a></li>
@@ -149,55 +147,14 @@
         <div class="container-fluid mt-3 mb-3" id="product">
             <h3>Sách Văn Học</h3>
             <hr>
-            <div class="row" id="sachvanhoc">
+            <div class="row" id="sachvanhoc" data-bs-genre="Sách văn học">
                 
             </div>
 
             <h3>Sách Giải Trí</h3>
             <hr>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card" style="width:100%; height: 100%;">
-                        <img src="IMG/tam-ly-hoc-toi-pham-tap-2.jpg" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h5>Tâm Lý Học Tội Phạm Tập 2</h5>
-                            <p class="card-text">“Tâm lý học tội phạm” là bộ sách gồm 2 tập đề cập đến quyền lựa chọn, ý chí tự do, cái thiện và cái ác, 
-                                phản ứng trước cám dỗ và sự thể hiện lòng dũng cảm hay hèn nhát khi đối mặt với nghịch cảnh của con người</p>
-                            <h4>35,000đ</h4>
-                            <div class="card-footer">
-                                <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card" style="width:100%; height: 100%;">
-                        <img src="IMG/tam-ly-hoc-phac-hoa-chan-dung.jpg"alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h5>Tâm Lý Học - Phác Họa Chân Dung Kẻ Phạm Tội</h5>
-                            <p class="card-text">Bằng giọng văn sắc bén, “Tâm lý học tội phạm – phác họa chân dung kẻ phạm tội” hứa hẹn dẫn dắt người đọc đi qua các cung bậc cảm xúc từ tò mò, ngạc nhiên đến sợ hãi, hoang mang tận cùng. Chúng ta sẽ lần tìm về quá khứ để từng bước gỡ những nút thắt chưa được giải, 
-                                khiến ta “ngạt thở” đọc tới tận trang cuối cùng.</p>
-                            <h4>80,000đ</h4>
-                            <div class="card-footer">
-                                <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card" style="width:100%; height: 100%;">
-                        <img src="IMG/tam-ly-hoc-toi-pham.jpg" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h5>Tâm Lý Học Tội Phạm – Tập 1</h5>
-                            <p class="card-text">Ấn bản đầu tiên của cuốn sách “Tâm lý học tội phạm” được xuất bản năm 1984, và ấn bản thứ hai xuất bản năm 2004. Sau một thập kỷ, và đã đến lúc bổ sung thêm các thông tin cho cuốn sách này. Trong ấn bản này, bạn sẽ hiểu chi tiết về các quá trình tư duy và chiến thuật phổ biến đối với những kẻ phạm tội, 
-                                bất kể lý lịch hay tội ác của chúng.</p>
-                            <h4>61,700đ</h4>
-                            <div class="card-footer">
-                                <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row mt-4" id="sachgiaitri">
+                
             </div>
 
             <h3>Sách Giáo Khoa</h3>
@@ -242,4 +199,5 @@
     </div>
 </body>
 </html>
-<script src="JS/sachvanhoc.js"></script>
+<script src=" JS/sachvanhoc.js"></script>
+<script src=" JS/sachgiaokhoa.js"></script>
