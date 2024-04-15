@@ -12,7 +12,7 @@ $(document).ready(function(){
                     <h5>${item.name}</h5>
                     <h4>${item.gia.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</h4>
                     <div class="card-footer">
-                    <input type="button" value="Đặt Hàng" class="btn btn-success"onclick=\'addCart(\`${obj}\`)\'>
+                    <button type="button"  class="btn btn-success" onclick=\'addCart(\`${obj}\`)\'>Đặt Hàng</button>
                     </div>
                 </div>
             </div>
@@ -27,12 +27,12 @@ $(document).ready(function(){
             let item = data[i];
             $("#dsproduct").append(`<div class="col-md-3 mt-3" id="${item.id}" onclick='hienthi("${item.id}")'>
         <div class="card" style="width:100%; height: 100%;">
-                <img src="${item.img}" height="415px" alt="" class="card-img-top">
+                <img src="../${item.img}" height="415px" alt="" class="card-img-top">
                 <div class="card-body">
                     <h5>${item.name}</h5>
                     <h4>${item.gia.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</h4>
                     <div class="card-footer">
-                    <button type="button" value="Đặt hàng" class="btn btn-success" onclick=\'addCart(\`${obj}\`)\'></button>
+                    <button type="button"  class="btn btn-success" onclick=\'addCart(\`${obj}\`)\'>Đặt Hàng</button>
                     </div>
                 </div>
             </div>
