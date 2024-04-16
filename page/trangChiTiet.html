@@ -1,28 +1,26 @@
-<!-- https://darqpl.github.io/Web_ban_sach/ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toko - Web bán sách chất lượng</title>
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <script src="JS/jquery-3.7.1.min.js"></script>
-    <script src="JS/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="CSS/styleindex.css">
-    <link rel="stylesheet" href="fontawesome/fontawesome-free-6.5.2-web/css/all.min.css">
-    <script src="js/index.js"></script>
-    <script src=" JS/sachvanhoc.js"></script>
-    <script src=" JS/sachgiaokhoa.js"></script>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.7.1.min.js"></script>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../CSS/styleindex.css">
+    <link rel="stylesheet" href="../fontawesome/fontawesome-free-6.5.2-web/css/all.min.css">
+    <script src="../js/index.js"></script>
+    <script src="../JS/chiTiet.js"></script>
 </head>
 <body>
     <div class="container-fluids">
         <div class="container-fluid">
             <div class="header">
                 <div class="row">
-                    <div class="col-lg-2 text-center"><a href="index.html"><img src="IMG/logo.png" alt=""></a></div>
+                    <div class="col-lg-2 text-center"><a href="../index.html"><img src="../IMG/logo.png" alt=""></a></div>
                     <div class="col-lg-7 center">
                         <div class="timKiem tK mt-2">
-                            <img class="icon-search" src="IMG/6fef2e788f00a16dc7d5a1dfc5d0e97a.png" alt="icon-search">
+                            <img class="icon-search" src="../IMG/6fef2e788f00a16dc7d5a1dfc5d0e97a.png" alt="icon-search">
                             <input type="text" data-view-id="main_search_form_input" value="" placeholder="Bạn tìm gì hôm nay" class="searchBar sB">
                             <button data-view-id="main_search_form_button" class="searchButton sBtn">Tìm kiếm</button>
                         </div>
@@ -30,19 +28,20 @@
                     <div class="col-lg-3 mt-1">
                         <div class="row">
                             <div data-view-id="header_user_shortcut" class="Userstyle__RootRevamp-sc-6e6am-15 hkQlMw mt-2">
-                                <div class="Userstyle__MenuItemRevamp-sc-6e6am-19 fUChpf">
-                                    <img src="IMG/home.png" alt="header_menu_item_home">
-                                    <a href="index.html" style="text-decoration: none;">Trang chủ</a>
-                                </div>
+                                <a href="../index.html" style="text-decoration: none;">
+                                    <div class="Userstyle__MenuItemRevamp-sc-6e6am-19 fUChpf">
+                                        <img src="../IMG/home.png" alt="header_menu_item_home">Trang chủ
+                                    </div>
+                                </a>
                                 <div data-view-id="header_header_account_container" class="Userstyle__MenuItemRevamp-sc-6e6am-19 fUChpf" data-bs-toggle="modal" data-bs-target="#myModal">
-                                    <img src="IMG/smile.png" alt="header_header_account_img">
+                                    <img src="../IMG/smile.png" alt="header_header_account_img">
                                     <span>Tài khoản</span>
                                 </div>
                                 <div class="Userstyle__CartItem-sc-6e6am-14 hfiWvr">
                                     <a data-view-id="header_user_shortcut_cart" href="#" rel="nofollow" style="text-decoration: none;">
                                         <div class="Userstyle__MenuItemRevamp-sc-6e6am-19 Userstyle__CartItemInnerRevamp-sc-6e6am-20 bhXqXQ iZYkSb">
                                             <div class="cart-wrapper">
-                                                <img class="cart-icon" src="IMG/cart.png" alt="header_header_img_Cart">
+                                                <img class="cart-icon" src="../IMG/cart.png" alt="header_header_img_Cart">
                                                 <div>
                                                     <span id="cartSL">0</span>
                                                 </div>
@@ -115,85 +114,44 @@
                             <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Danh Mục</a>
                             <ul class="dropdown-menu bg-info">
                                 <li><a href="" class="dropdown-item">Sách Kinh Tế</a></li>
-                                <li><a href="page/danhmucSachGiaoKhoa.html" class="dropdown-item">Sách Giáo Khoa</a></li>
-                                <li><a href="page/danhmucVanHoc.html" class="dropdown-item">Sách Văn Học</a></li>
+                                <li><a href="danhmucSachGiaoKhoa.html" class="dropdown-item">Sách Giáo Khoa</a></li>
+                                <li><a href="danhmucVanHoc.html" class="dropdown-item">Sách Văn Học</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a href="page/aboutus.html" class="nav-link">About us</a></li>
+                        <li class="nav-item"><a href="aboutus.html" class="nav-link">About us</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="slide-show">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="IMG/HinhanhSales.jpg" class="d-block" alt="Slide1" width="100%"/>
+        <div class="product p-5">
+            <div class="row">
+                <div class="col-lg-4 text-center hinhSach">
+                    
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col text-center sach">
+                            <h2 class="text-center">Sách Kinh Tế</h2>
+                            <p class="text-center">Giá: 100.000đ</p>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="IMG/4092_detail.jpg" class="d-block" alt="Slide2" width="100%"/>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="IMG/Suc-manh-tam-thuc1.png" class="d-block" alt="Slide3" width="100%"/>
+                    <div class="row">
+                        <div class="col text-center">
+                            <label for="soluong">Số lượng</label>
+                            <input type="number" name="soluong" id="soluong" class="form-control mt-2 mb-2" style="width: 10%;margin-left: 45%;">
+                            <button class="btn btn-success">Mua ngay</button>
+                            <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+                        </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div> 
-
-        <!-- san pham -->  
-        <div class="container-fluid mt-3 mb-3" id="product">
-            <h3>Sách Văn Học</h3>
-            <hr>
-            <div class="row" id="sachvanhoc" data-bs-genre="Sách văn học">
-                
-            </div>
-            <h3>Sách Giáo Khoa</h3>
-            <hr>
-            <div class="row mt-4" id="sachgiaokhoa">
-                
             </div>
         </div>
-        <footer class="footer bg-info">
-            <div class="row gap-4 gap-lg-0">
-                <div class="col-md-3" id="aboutus">Về chúng tôi: <br><span>Chúng tôi là công ty cổ phần Toko.
-                    Trụ sở tọa lạc tại TpHCM</span>
-                <p>Bài tập lớn hệ thống công nghệ web 2024, Đề tài là Website bán sách, Thành viên thực hiện: <ul>
-                    <li>Đặng Trần Tấn Phát : 22649051</li>
-                    <li>Huỳnh Ánh Hưng :22645171</li>
-                </ul></p>
-                </div>
-                <div class="col-md-3">Liên hệ chúng tôi qua:
-                    <ul class="lh">
-                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/">
- 
-                            <i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 ">Hổ trợ khách hàng
-                    <ul class="ht">
-                        <li>Các câu hỏi thường gặp</li>
-                        <li>Hướng dẫn đặt hàng</li>
-                        <li>Chính sách đổi trả</li>
-                        <li>Phương thức vận chuyển</li>
-                        <li>Chính sách nhập khẩu</li>
-                        <li>Hổ trợ khách hàng: <a href="https://www.google.com/intl/vi/gmail/about/">toko@gmail.vn.com</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3  ">Phương thức thanh toán <br>
-                    <img src="IMG/method.png" alt="method">
-                </div>
+        <div class="bot_product">
+            <hr>
+            <h3>Mô tả:</h3>
+            <div class="moTa">
+
             </div>
-        </footer>
+        </div>
     </div>
 </body>
-</html>
