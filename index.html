@@ -30,14 +30,14 @@
                             <div data-view-id="header_user_shortcut" class="Userstyle__RootRevamp-sc-6e6am-15 hkQlMw mt-2">
                                 <div class="Userstyle__MenuItemRevamp-sc-6e6am-19 fUChpf">
                                     <img src="IMG/home.png" alt="header_menu_item_home">
-                                    <a rel="nofollow">Trang chủ</a>
+                                    <a rel="nofollow" href="">Trang chủ</a>
                                 </div>
                                 <div data-view-id="header_header_account_container" class="Userstyle__MenuItemRevamp-sc-6e6am-19 fUChpf" data-bs-toggle="modal" data-bs-target="#myModal">
                                     <img src="IMG/smile.png" alt="header_header_account_img">
                                     <span>Tài khoản</span>
                                 </div>
                                 <div class="Userstyle__CartItem-sc-6e6am-14 hfiWvr">
-                                    <a data-view-id="header_user_shortcut_cart" href="#" rel="nofollow" style="text-decoration: none;">
+                                    <a data-view-id="header_user_shortcut_cart" href="page/addCart.html" rel="nofollow" style="text-decoration: none;">
                                         <div class="Userstyle__MenuItemRevamp-sc-6e6am-19 Userstyle__CartItemInnerRevamp-sc-6e6am-20 bhXqXQ iZYkSb">
                                             <div class="cart-wrapper">
                                                 <img class="cart-icon" src="IMG/cart.png" alt="header_header_img_Cart">
@@ -195,5 +195,39 @@
     </div>
 </body>
 </html>
+<script>
+    let soluong=localStorage.getItem('totalQTY');
+if(soluong==null){
+    soluong=0;
+}
+document.getElementById('cartSL').innerHTML = soluong;
+let arrcart = localStorage.getItem('mycart');
+if(arrcart==null){
+    arrcart=[];
+}else{
+    arrcart = JSON.parse(localStorage.getItem('mycart'));
+}
+function addCart(objSP){
+    var sp = JSON.parse(objSP);
+    let flag = false;
+    let item ;
+    for(let i=0;i<arrcart.length;i++){
+       if(arrcart[i].sp.id==sp.id){
+            flag = true;
+            arrcart[i].qty++;
+            break;
+       }
+    }
+    if(flag==false){
+       let cartitem ={sp:sp, qty:1};
+         arrcart.push(cartitem);
+    }
+    soluong++;
+    document.getElementById('cartSL').innerHTML = soluong;
+    localStorage.setItem('totalQTY',soluong);
+    localStorage.setItem('mycart',JSON.stringify(arrcart));
+}
+
+</script>
 <script src=" JS/sachvanhoc.js"></script>
 <script src=" JS/sachgiaokhoa.js"></script>
