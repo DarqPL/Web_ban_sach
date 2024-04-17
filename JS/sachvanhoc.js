@@ -42,24 +42,4 @@ $(document).ready(function(){
     });
     
 })
-let soluong=0;
-let arrcart = [];
-function addCart(objSP){
-    var sp = JSON.parse(objSP);
-    let flag = false;
-    let item ;
-    for(let i=0;i<arrcart.length;i++){
-       if(arrcart[i].sp.id==sp.id){
-            flag = true;
-            arrcart[i].qty++;
-            break;
-       }
-    }
-    if(flag==false){
-       let cartitem ={sp:sp, qty:1};
-         arrcart.push(cartitem);
-    }
-    soluong++;
-    document.getElementById('cartSL').innerHTML = soluong;
-    localStorage.setItem('mycart',JSON.stringify(arrcart));
-}
+

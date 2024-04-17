@@ -9,7 +9,6 @@
     <script src="../JS/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../CSS/danhmuc.css">
     <link rel="stylesheet" href="../fontawesome/fontawesome-free-6.5.2-web/css/all.min.css">
-    <script src="../JS/sachvanhoc.js"></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -27,19 +26,24 @@
                     <div class="col-lg-3 mt-1">
                         <div class="row">
                             <div data-view-id="header_user_shortcut" class="Userstyle__RootRevamp-sc-6e6am-15 hkQlMw mt-2">
+                                <a href="../index.html">
                                 <div class="Userstyle__MenuItemRevamp-sc-6e6am-19 fUChpf">
                                     <img src="../IMG/home.png" alt="header_menu_item_home">
                                     <a rel="nofollow">Trang chủ</a>
+                                </a>
                                 </div>
                                 <div data-view-id="header_header_account_container" class="Userstyle__MenuItemRevamp-sc-6e6am-19 fUChpf">
                                     <img src="../IMG/smile.png" alt="header_header_account_img">
                                     <span>Tài khoản</span>
                                 </div>
                                 <div class="Userstyle__CartItem-sc-6e6am-14 hfiWvr">
-                                    <a data-view-id="header_user_shortcut_cart" href="#" rel="nofollow">
+                                    <a data-view-id="header_user_shortcut_cart" href="../page/addCart.html" rel="nofollow" style="text-decoration: none;">
                                         <div class="Userstyle__MenuItemRevamp-sc-6e6am-19 Userstyle__CartItemInnerRevamp-sc-6e6am-20 bhXqXQ iZYkSb">
                                             <div class="cart-wrapper">
                                                 <img class="cart-icon" src="../IMG/cart.png" alt="header_header_img_Cart">
+                                                <div>
+                                                    <span id="cartSL">0</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </a>
@@ -57,14 +61,12 @@
                 </button>
                 <div class="collapse navbar-collapse " id="collapseNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="../index.html" class="nav-link">Trang Chủ</a></li>
                         <li class="nav-item"><a href="#product" class="nav-link">Danh sách sản phẩm</a></li>
                         <li class="nav-item dropdown">
                             <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Danh Mục</a>
                             <ul class="dropdown-menu bg-info">
-                                <li><a href="" class="dropdown-item">Sách Kinh Tế</a></li>
-                                <li><a href="" class="dropdown-item">Sách Giáo Khoa</a></li>
-                                <li><a href="" class="dropdown-item">Sách Văn Học</a></li>
+                                <li><a href="../page/danhmucSachGiaoKhoa.html" class="dropdown-item">Sách Giáo Khoa</a></li>
+                                <li><a href="../page/danhmucVanHoc.html" class="dropdown-item">Sách Văn Học</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a href="../page/aboutus.html" class="nav-link">About us</a></li>
@@ -113,3 +115,38 @@
     </div>
 </body>
 </html>
+<script src="../JS/sachvanhoc.js"></script>
+<script>
+    let soluong=localStorage.getItem('totalQTY');
+if(soluong==null){
+    soluong=0;
+}
+document.getElementById('cartSL').innerHTML = soluong;
+let arrcart = localStorage.getItem('mycart');
+if(arrcart==null){
+    arrcart=[];
+}else{
+    arrcart = JSON.parse(localStorage.getItem('mycart'));
+}
+function addCart(objSP){
+    var sp = JSON.parse(objSP);
+    let flag = false;
+    let item ;
+    for(let i=0;i<arrcart.length;i++){
+       if(arrcart[i].sp.id==sp.id){
+            flag = true;
+            arrcart[i].qty++;
+            break;
+       }
+    }
+    if(flag==false){
+       let cartitem ={sp:sp, qty:1};
+         arrcart.push(cartitem);
+    }
+    
+    soluong++;
+    document.getElementById('cartSL').innerHTML = soluong;
+    localStorage.setItem('totalQTY',JSON.stringify(soluong));
+    localStorage.setItem('mycart',JSON.stringify(arrcart));
+}
+</script>
