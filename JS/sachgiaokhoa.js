@@ -6,9 +6,9 @@ $(document).ready(function(){
             if(i==4) break;
             $("#sachgiaokhoa").append(`<div class="col-md-3 mb-3" id="${item.id}" onclick='hienthi("${item.id}")'>
         <div class="card" style="width:100%; height: 100%;">
-                <img src="${item.img}" height="415px" alt="" class="card-img-top">
+                <a href="page/trangChiTiet.html" style="text-decoration: none;"><img src="${item.img}" height="415px" alt="" class="card-img-top"></a>
                 <div class="card-body">
-                    <h5>${item.name}</h5>
+                    <a href="page/trangChiTiet.html" style="text-decoration: none;"><h5>${item.name}</h5></a>
                     <h4>$${item.gia}</h4>
                     <div class="card-footer">
                         <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success"></a>
@@ -25,9 +25,9 @@ $(document).ready(function(){
             let item = data[i];
             $("#products").append(`<div class="col-md-3 mt-3" id="${item.id}" onclick='hienthi("${item.id}")'>
         <div class="card" style="width:100%; height: 100%;">
-                <img src="../${item.img}" height="415px" alt="" class="card-img-top">
+                <a href="page/trangChiTiet.html" style="text-decoration: none;"><img src="../${item.img}" height="415px" alt="" class="card-img-top"></a>
                 <div class="card-body">
-                    <h5>${item.name}</h5>
+                    <a href="page/trangChiTiet.html" style="text-decoration: none;"><h5>${item.name}</h5></a>
                     <h4>${item.gia.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</h4>
                     <div class="card-footer">
                         <a href=""><input type="button" value="Đặt Hàng" class="btn btn-success" onclick=""|></a>
@@ -37,5 +37,4 @@ $(document).ready(function(){
         </div>`)
         }
     });
-    
 })
