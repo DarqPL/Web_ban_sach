@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trang Chi Tiết Sản Phẩm</title>
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <script src="../JS/jquery-3.7.1.min.js"></script>
     <script src="../JS/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../CSS/danhmuc.css">
+    <link rel="stylesheet" href="../CSS/trangchitiet.css">
     <link rel="stylesheet" href="../fontawesome/fontawesome-free-6.5.2-web/css/all.min.css">
 </head>
 <body>
@@ -27,11 +27,11 @@
                         <div class="row">
                             <div data-view-id="header_user_shortcut" class="Userstyle__RootRevamp-sc-6e6am-15 hkQlMw mt-2">
                                 <a href="../index.html">
-                                <div class="Userstyle__MenuItemRevamp-sc-6e6am-19 fUChpf">
-                                    <img src="../IMG/home.png" alt="header_menu_item_home">
-                                    <a rel="nofollow">Trang chủ</a>
+                                    <div class="Userstyle__MenuItemRevamp-sc-6e6am-19 fUChpf">
+                                        <img src="../IMG/home.png" alt="header_menu_item_home">
+                                        <a rel="nofollow">Trang chủ</a>
+                                    </div>
                                 </a>
-                                </div>
                                 <div data-view-id="header_header_account_container" class="Userstyle__MenuItemRevamp-sc-6e6am-19 fUChpf">
                                     <img src="../IMG/smile.png" alt="header_header_account_img">
                                     <span>Tài khoản</span>
@@ -75,8 +75,19 @@
             </div>
         </nav>
         <section class="container-fluid" id="product">
-            <div class="row" id="dsproduct">
-
+            <div class="row" id="hienthi">
+                <div class="col"></div>
+                <div class="col">
+                    <img src="" alt="" width="500px"  id="mainImg">
+                </div>
+                <div class="col">
+                    <h1 id="tensp"></h1>
+                    <p id="gia"></p>
+                    <p id="mota"></p>
+                    <button class="btn btn-primary" onclick="addCart(localStorage.getItem('chitiet'))">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="col"></div>
+                
             </div>
         </section>
         <footer class="footer bg-info">
@@ -115,7 +126,6 @@
     </div>
 </body>
 </html>
-<script src="../JS/sachvanhoc.js"></script>
 <script>
     let soluong=localStorage.getItem('totalQTY');
 if(soluong==null){
@@ -148,10 +158,17 @@ function addCart(objSP){
     document.getElementById('cartSL').innerHTML = soluong;
     localStorage.setItem('totalQTY',JSON.stringify(soluong));
     localStorage.setItem('mycart',JSON.stringify(arrcart));
+    //Trang chi tiet
+
 }
-function xemchitiet(objsp){
-    localStorage.removeItem('chitiet');
-    localStorage.setItem('chitiet',objsp);
-    window.location.href = 'detailitem.html';
-}
+
+let chitiet = JSON.parse(localStorage.getItem('chitiet'));
+document.getElementById('mainImg').src = `../${chitiet.img}`;
+document.getElementById('tensp').innerHTML = chitiet.name;
+document.getElementById('gia').innerHTML = chitiet.gia.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+document.getElementById('mota').innerHTML = chitiet.mota;
+
+
+
+
 </script>

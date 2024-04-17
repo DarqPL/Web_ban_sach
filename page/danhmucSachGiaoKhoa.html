@@ -148,4 +148,9 @@ function addCart(objSP){
     localStorage.setItem('totalQTY',JSON.stringify(soluong));
     localStorage.setItem('mycart',JSON.stringify(arrcart));
 }
+function xemchitiet(objsp){
+    localStorage.removeItem('chitiet');
+    localStorage.setItem('chitiet',objsp);
+    window.location.href = 'detailitem.html';
+}
 </script>
