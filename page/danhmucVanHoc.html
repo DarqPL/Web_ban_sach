@@ -113,3 +113,36 @@
     </div>
 </body>
 </html>
+<script>
+    let soluong=localStorage.getItem('totalQTY');
+if(soluong==null){
+    soluong=0;
+}
+document.getElementById('cartSL').innerHTML = soluong;
+let arrcart = localStorage.getItem('mycart');
+if(arrcart==null){
+    arrcart=[];
+}else{
+    arrcart = JSON.parse(localStorage.getItem('mycart'));
+}
+function addCart(objSP){
+    var sp = JSON.parse(objSP);
+    let flag = false;
+    let item ;
+    for(let i=0;i<arrcart.length;i++){
+       if(arrcart[i].sp.id==sp.id){
+            flag = true;
+            arrcart[i].qty++;
+            break;
+       }
+    }
+    if(flag==false){
+       let cartitem ={sp:sp, qty:1};
+         arrcart.push(cartitem);
+    }
+    soluong++;
+    document.getElementById('cartSL').innerHTML = soluong;
+    localStorage.setItem('totalQTY',soluong);
+    localStorage.setItem('mycart',JSON.stringify(arrcart));
+}
+</script>
