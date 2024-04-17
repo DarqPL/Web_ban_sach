@@ -1,10 +1,10 @@
 function formValidation() {
     var username = document.getElementById("username").value;
-    var regUsername = /^[A-Z][A-Za-z\s]+$/;      
-    var regEmail = /^[a-z0-9]+@[a-z0-9]+(\.iuh\.edu\.vn)/;  
+    var regUsername = /[A-Za-z\s]+/;      
+    var regEmail = /^[a-z0-9]+@[a-z0-9]+(\.com)/;  
     var regPhone = /^(090|091|092)[0-9]{7}/;
     var regPwd = /^[a-zA-Z0-9]{6,}/;
-    var regRepwd = /^[a-zA-Z0-9]{6,}/;  
+    var regRepwd = /^[a-zA-Z0-9]{6,}/;
     if(username == "" || username == null) {
         errName.innerHTML = "Username khong duoc rong";
     } else if (isNaN(username) == false) {
@@ -54,5 +54,12 @@ function formValidation() {
     } else {
         errRepwd.innerHTML = "Repassword sai cu phap";
     }
-    return false;
+
+    if(username.match(regUsername) && email.match(regEmail) && phone.match(regPhone) && pwd.match(regPwd) && Repwd.match(regRepwd) && Repwd == pwd){
+        alert("Dang ky thanh cong");
+        return true;
+    } else {
+        alert("Dang ky that bai");
+        return false;
+    }
 }
