@@ -7,7 +7,7 @@ $(document).ready(function(){
             if(i==4) break;
             $("#sachgiaokhoa").append(`<div class="col-md-3 mb-3" id="${item.id}">
         <div class="card" style="width:100%; height: 100%;">
-                <img src="${item.img}" height="415px" alt="" class="card-img-top">
+        <img src="${item.img}" height="415px" alt="" class="card-img-top" onclick=\'xemchitiet(\`${obj}\`)\'>
                 <div class="card-body">
                     <h5>${item.name}</h5>
                     <h4>${item.gia.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</h4>
