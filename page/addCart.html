@@ -198,7 +198,7 @@
                     <td>${item.sp.name}</td>
                     <td>${item.sp.gia.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</td>
                     <td>
-                        <input type="number" name="txtQty" id="txtQty" style="width: 40px;" value="${item.qty}">
+                        <input type="number" name="txtQty" id="txtQty" style="width: 40px;" value="${item.qty}" onclick="tinhLai()">
                     </td>
                     <td>${(item.sp.gia*item.qty).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</td>
                 </tr>`;
@@ -211,5 +211,17 @@
         localStorage.removeItem('mycart');
         localStorage.removeItem('totalQTY');
         window.location.href='../index.html';
+    }
+
+    function tinhLai() {
+        let total=0;
+        let txtQty=document.getElementsByName('txtQty');
+        for(let i=0;i<cart.length;i++){
+            cart[i].qty=txtQty[i].value;
+            total+=cart[i].sp.gia*cart[i].qty;
+        }
+        localStorage.setItem('mycart',JSON.stringify(cart));
+        localStorage.setItem('totalQTY',cart.length);
+        document.getElementById('total').innerText=total.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
     }
 </script>
