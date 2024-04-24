@@ -3,7 +3,7 @@
         "id":1,
         "name":"360 động từ bất quy tắc",
         "gia": 16000,
-        "img":"IMG/sachgiaokhoa/360-dong-tu-bat-quy-tac.jpg",
+        "img":"../IMG/sachgiaokhoa/360-dong-tu-bat-quy-tac.jpg",
         "mota":"Sách 360 động từ bất quy tắc là một tài liệu học thuật giúp người học hiểu và áp dụng các động từ không tuân theo quy tắc thông thường trong tiếng Anh. Nó cung cấp một cái nhìn toàn diện về cách sử dụng các động từ này trong ngữ cảnh khác nhau, từ văn viết đến giao tiếp hàng ngày, giúp người đọc nắm vững và sử dụng linh hoạt trong giao tiếp và viết văn",
         "soluong":100,
         "theloai":"Sách giáo khoa"
@@ -11,9 +11,41 @@
         "id":2,
         "name":"Sách - Luyện đọc 1 - kết nối tri thức",
         "gia": 31000,
-        "img":"IMG/sachgiaokhoa/Sach-Luyen-doc-1-ket-noi-tri-thuc.jpg",
+        "img":"../IMG/sachgiaokhoa/Sach-Luyen-doc-1-ket-noi-tri-thuc.jpg",
         "mota":"Sách Luyện đọc 1 - Kết nối tri thức là một tài liệu giáo trình được thiết kế để phát triển kỹ năng đọc hiểu và kỹ năng tư duy phản biện cho học sinh. Nó cung cấp các bài đọc đa dạng từ các lĩnh vực khác nhau, từ khoa học đến văn học, từ tin tức đến kiến thức xã hội, nhằm mục đích giúp học sinh mở rộng kiến thức, củng cố từ vựng và phát triển khả năng suy luận và phản biện",
         "soluong":100,
         "theloai":"Sách giáo khoa"
+    },{
+        "id":3,
+        "name":"Sách - Bài tập toán 1",
+        "gia": 31000,
+        "img":"../IMG/sachgiaokhoa/Sach-Vo-o-li-Bai-tap-toan-lop-1-Canh-Dieu.jpg",
+        "mota":"Sách - Bài tập toán 1 là một tài liệu giáo trình cung cấp các bài tập toán cơ bản, giúp học sinh lớp 1 rèn luyện kỹ năng toán học từ các phép tính cơ bản đến các vấn đề hình học đơn giản.",
+        "soluong":100,
+        "theloai":"Sách giáo khoa" 
+    },{
+        "id":4,
+        "name":"Vở ô li có mẫu chữ - Quyển 1",
+        "gia": 31000,
+        "img":"../IMG/sachgiaokhoa/Sach-Vo-o-li-co-mau-chu-lop-1-Canh-Dieu-Q1-2.jpg",
+        "mota":"Vở ô li có mẫu chữ - Quyển 1 là một cuốn vở được thiết kế đặc biệt cho học sinh tiểu học để họ luyện viết chữ cái, từ và câu theo một mẫu chữ cụ thể. Cuốn sách này cung cấp các bài tập viết để học sinh thực hành và cải thiện kỹ năng viết của mình theo từng bước.",
+        "soluong":100,
+        "theloai":"Sách giáo khoa" 
+    },{
+        "id":5,
+        "name":"Vở ô li có mẫu chữ - Quyển 3",
+        "gia": 31000,
+        "img":"../IMG/sachgiaokhoa/Sach-Vo-o-li-co-mau-chu-lop-1-Canh-Dieu-Q3.jpg",
+        "mota":"Vở ô li có mẫu chữ - Quyển 3 là phần tiếp theo của loạt sách dành cho học sinh tiểu học để họ luyện viết chữ cái, từ và câu theo các mẫu chữ cụ thể. Quyển sách này tiếp tục cung cấp các bài tập viết phong phú và đa dạng để học sinh có thể tiếp tục cải thiện và phát triển kỹ năng viết của mình.",
+        "soluong":100,
+        "theloai":"Sách giáo khoa" 
+    },{
+        "id":6,
+        "name":"Sổ tay Toán - Lý - Hóa",
+        "gia": 31000,
+        "img":"../IMG/sachgiaokhoa/so-tay-toan-ly-hoa.jpg",
+        "mota":"Sổ tay Toán - Lý - Hóa là một tài liệu ghi chép các kiến thức cơ bản trong ba môn Toán, Lý và Hóa, giúp học sinh và sinh viên tổ chức và ôn tập kiến thức hiệu quả.",
+        "soluong":100,
+        "theloai":"Sách giáo khoa" 
     }
 ]           

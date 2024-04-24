@@ -3,7 +3,7 @@
         "id":1,
         "name":"Dế mèm phiêu lưu ký",
         "gia":35000,
-        "img":"IMG/Sachvanhoc/de-men-phieu-luu-ky_resize.jpg",
+        "img":"../IMG/Sachvanhoc/de-men-phieu-luu-ky_resize.jpg",
         "mota":"“Biết ước mơ và hành động, Dế mèn của tôi chắc chắn là bạn trung thủy với thế hệ tuổi thơ của bạn.”",
         "soluong":100,
         "theloai":"Sách văn học"
@@ -11,15 +11,15 @@
         "id":2,
         "name":"Sự im lặng của bầy cừu",
         "gia":80000,
-        "img":"IMG/Sachvanhoc/su-im-lang-cua-bay-cuu-800x800-1.jpg",
+        "img":"../IMG/Sachvanhoc/su-im-lang-cua-bay-cuu-800x800-1.jpg",
         "mota":"“Sự im lặng của bầy cừu” là một trong những cuốn sách kinh điển nhất của thế kỷ 20, một câu chuyện đầy kinh dị và sâu sắc về tâm lý con người.",
         "soluong":100,
         "theloai":"Sách văn học"
     },{
         "id":3,
-        "name":"Đừng Ngồi Chờ Chết Trong Gió Bảo-Giang Minh",
+        "name":"Đừng Ngồi Chờ Chết Trong Gió Bảo",
         "gia":61000,
-        "img":"IMG/Sachvanhoc/cho-chet-trong-gio-bao.jpg",
+        "img":"../IMG/Sachvanhoc/cho-chet-trong-gio-bao.jpg",
         "mota":"Đừng Ngồi Chờ Chết Trong Gió là một cuốn sách đầy cảm hứng, giúp bạn thay đổi cuộc sống của mình, thay đổi cách nhìn nhận về bản thân và thế giới xung quanh.",
         "soluong":100,
         "theloai":"Sách văn học"
@@ -27,7 +27,7 @@
         "id":4,
         "name":"Không gia đình",
         "gia":89000,
-        "img":"IMG/Sachvanhoc/khong-gia-dinh.jpg",
+        "img":"../IMG/Sachvanhoc/khong-gia-dinh.jpg",
         "mota":"Tác phẩm đã ca ngợi sự lao động bền bỉ, tinh thần tự lập, chịu đựng gian khó, khích lệ tình bạn chân chính. Ca ngợi lòng nhân ái, tình yêu cuộc sống, ý chí vươn lên không ngừng…Không Gia Đình vì thế đã vượt qua biên giới nước Pháp và tồn tại lâu dài với thời gian.",
         "soluong":100,
         "theloai":"Sách văn học"
@@ -35,7 +35,7 @@
         "id":5,
         "name":"Muôn kiếp nhân sinh",
         "gia":129000,
-        "img":"IMG/Sachvanhoc/muon-kiep-nhan-sinh-tap-1.jpg",
+        "img":"../IMG/Sachvanhoc/muon-kiep-nhan-sinh-tap-1.jpg",
         "mota":"Tác phẩm đã ca ngợi sự lao động bền bỉ, tinh thần tự lập, chịu đựng gian khó, khích lệ tình bạn chân chính. Ca ngợi lòng nhân ái, tình yêu cuộc sống, ý chí vươn lên không ngừng…Không Gia Đình vì thế đã vượt qua biên giới nước Pháp và tồn tại lâu dài với thời gian.",
         "soluong":100,
         "theloai":"Sách văn học"
@@ -43,7 +43,7 @@
         "id":6,
         "name":"365 Lời Nhắn Từ Vãn Tình",
         "gia":73000,
-        "img":"IMG/Sachvanhoc/365-loi-nhan-tu-van-tinh.jpg",
+        "img":"../IMG/Sachvanhoc/365-loi-nhan-tu-van-tinh.jpg",
         "mota":"365 Lời Nhắn Từ Vãn Tình là một cuốn sách tâm lý, tư duy, phát triển bản thân, giúp bạn thay đổi cuộc sống của mình, thay đổi cách nhìn nhận về bản thân và thế giới xung quanh.",
         "soluong":100,
         "theloai":"Sách văn học"
@@ -51,7 +51,7 @@
         "id":7,
         "name":"Cái Cười Của Thánh Nhân",
         "gia":159000,
-        "img":"IMG/Sachvanhoc/cai-cuoi-cua-thanh-nhan.jpg",
+        "img":"../IMG/Sachvanhoc/cai-cuoi-cua-thanh-nhan.jpg",
         "mota":"Cái Cười Của Thánh Nhân là một cuốn sách tâm lý, tư duy, phát triển bản thân, giúp bạn thay đổi cuộc sống của mình, thay đổi cách nhìn nhận về bản thân và thế giới xung quanh.",
         "soluong":100,
         "theloai":"Sách văn học"
@@ -59,7 +59,7 @@
         "id":8,
         "name":"Chưa Kịp Lớn Đã Phải Trưởng Thành ",
         "gia":129000,
-        "img":"IMG/Sachvanhoc/Chua-Kip-Lon-Da-Phai-Truong-Thanh-To-la-May.jpg",
+        "img":"../IMG/Sachvanhoc/Chua-Kip-Lon-Da-Phai-Truong-Thanh-To-la-May.jpg",
         "mota":"Chưa Kịp Lớn Đã Phải Trưởng Thành - Cầm trên tay cuốn sách này, bạn sẽ hiểu rằng: quá trình trưởng thành nào cũng đều có kì vọng và nuối tiếc nhưng con người luôn phải học cách vượt qua mơ hồ, gạt đi mộng tưởng mà lớn lên.",
         "soluong":200,
         "theloai":"Sách văn học"
@@ -67,7 +67,7 @@
         "id":9,
         "name":"Những Người Hàng Xóm",
         "gia":200000,
-        "img":"IMG/Sachvanhoc/nhung-nguoi-hang-xom.jpg",
+        "img":"../IMG/Sachvanhoc/nhung-nguoi-hang-xom.jpg",
         "mota":"Câu chuyện mở ra sẽ là bất ngờ với bạn đọc “ruột” của Nguyễn Nhật Ánh, và kết thúc trong một sự dịu dàng nhẹ nhõm lòng, bởi nhà văn đã nhắc lại cho ta nhớ: cuộc sống luôn thật là tươi đẹp biết bao. Khép sách lại, bạn sẽ nhận được niềm vui bình yên."
         ,"soluong":100,
         "theloai":"Sách văn học"

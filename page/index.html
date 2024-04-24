@@ -1,0 +1,342 @@
+<!-- https://darqpl.github.io/Web_ban_sach/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko</title>
+    <link rel="icon" type="image/x-icon" href="../IMG/toko.png">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.7.1.min.js"></script>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../CSS/styleindex.css">
+    <link rel="stylesheet" href="../fontawesome/fontawesome-free-6.5.2-web/css/all.min.css">
+    <script src="../JS/sachvanhoc.js"></script>
+    <script src="../JS/sachgiaokhoa.js"></script>
+    <script src="../JS/index.js"></script>
+</head>
+<body>
+    <div class="container-fluids">
+        <div class="container-fluid">
+          <div class="header">
+            <div class="row">
+              <div class="col-lg-2 text-center"><a href="index.html"><img src="../IMG/logo.png" alt="" width="50%"></a></div>
+              <div class="col-lg-7 center">
+                  <div class="timKiem tK mt-2">
+                      <img class="icon-search" src="../IMG/6fef2e788f00a16dc7d5a1dfc5d0e97a.png" alt="icon-search">
+                      <input type="text" data-view-id="main_search_form_input" value="" placeholder="Bạn tìm gì hôm nay" class="searchBar sB">
+                      <button data-view-id="main_search_form_button" class="searchButton sBtn">Tìm kiếm</button>
+                  </div>
+              </div>
+              <div class="col-lg-3 mt-1">
+                  <div class="row">
+                      <div data-view-id="header_user_shortcut" class="Userstyle__RootRevamp-sc-6e6am-15 hkQlMw mt-2">
+                          <a href="index.html">
+                              <div class="Userstyle__MenuItemRevamp-sc-6e6am-19 fUChpf">
+                                  <img src="../IMG/home.png" alt="header_menu_item_home">
+                                  <a rel="nofollow" href="index.html" style="text-decoration: none;">Trang chủ</a>
+                              </div>
+                          </a>
+                          <div data-view-id="header_header_account_container" class="Userstyle__MenuItemRevamp-sc-6e6am-19 fUChpf" data-bs-toggle="modal" data-bs-target="#modalContent">
+                              <img src="../IMG/smile.png" alt="header_header_account_img">
+                              <span id="loginText">Tài khoản</span>
+                          </div>
+                          <div class="Userstyle__CartItem-sc-6e6am-14 hfiWvr">
+                              <a data-view-id="header_user_shortcut_cart" href="addCart.html" rel="nofollow" style="text-decoration: none;">
+                                  <div class="Userstyle__MenuItemRevamp-sc-6e6am-19 Userstyle__CartItemInnerRevamp-sc-6e6am-20 bhXqXQ iZYkSb">
+                                      <div class="cart-wrapper">
+                                          <img class="cart-icon" src="../IMG/cart.png" alt="header_header_img_Cart">
+                                          <div>
+                                              <span id="cartSL">0</span>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <nav class="navbar navbar-expand-sm bg-info">
+                  <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNav">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse " id="collapseNav">
+                          <ul class="navbar-nav">
+                              <li class="nav-item"><a href="#product" class="nav-link">Danh sách sản phẩm</a></li>
+                              <li class="nav-item dropdown">
+                                  <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Danh Mục</a>
+                                  <ul class="dropdown-menu bg-info">
+                                      <li><a href="danhmucSachGiaoKhoa.html" class="dropdown-item">Sách Giáo Khoa</a></li>
+                                      <li><a href="danhmucVanHoc.html" class="dropdown-item">Sách Văn Học</a></li>
+                                  </ul>
+                              </li>
+                              <li class="nav-item"><a href="aboutus.html" class="nav-link">About us</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+          </div>
+          <div class="slide-show">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../IMG/HinhanhSales.jpg" class="d-block" alt="Slide1" width="100%"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../IMG/4092_detail.jpg" class="d-block" alt="Slide2" width="100%"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../IMG/Suc-manh-tam-thuc1.png" class="d-block" alt="Slide3" width="100%"/>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div> 
+        <div class="modal" id="modalContent">
+          <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+
+              <div class="modal-header p-0 border-0" login-header id="modalHeader">
+                <ul class="nav nav-tabs w-100 p-0">
+                  <li class="nav-item mt-2 ms-3">
+                    <a href="#" class="nav-item-link-active nav-link active text-blue font-form fw-bold" data-bs-toggle="tab" data-bs-target="#loginForm">Đăng nhập</a>
+                  </li>
+
+                  <li class="nav-item mt-2 ">
+                    <a href="#" class="nav-item-link nav-link text-blue font-form fw-bold" data-bs-toggle="tab" data-bs-target="#registerForm">Đăng ký</a>
+                  </li>
+
+                  <button class="btn btn-close m-0 p-2 ms-auto rounded-0" data-bs-dismiss="modal"> </button>
+                </ul>
+              </div>
+
+              <div class="modal-body">
+                <div class="tab-content" id="tabContent">
+
+                  <!-- form đăng nhập  -->
+                  <div class="tab-pane active" id="loginForm" login-form onsubmit="return checkLoginForm()">
+                    <form action="" class="loginForm">
+                      <div class="row">
+                        <div class="col my-2">
+                          <label class="my-2 fw-bold" for="userInput">Tên đăng nhập</label>
+                          <input type="text" placeholder="Tên đăng nhập" class="form-control" name="userInput" id="userInput">
+                          <span id="errUserInput" style="color: red; margin-top: 5px;"></span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col my-2">
+                          <label class="my-2 fw-bold" for="passwordInput">Mật khẩu</label>
+                          <input  type="password" placeholder="Mật khẩu" class="form-control" name="passwordInput" id="passwordInput">
+                          <span id="errPasswordInput" style="color: red; margin-top: 5px;"></span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <ul class="nav">
+                          <li class="nav-item">
+                            <a href="#" class="nav-link pe-auto" btn-forget-password data-bs-toggle="tab" data-bs-target="#passwordForm">Quên mật khẩu?</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="modal-footer border-0">
+                        <button type="submit" id="loginButton" class="btn btn-primary">Đăng nhập</button>
+                        <button type="reset" class="btn btn-danger" data-bs-dismiss="modal">Thoát</button>
+                      </div>
+
+                    </form>
+                  </div>
+
+                  <!-- form đăng ký  -->
+                  <div class="tab-pane" register-form id="registerForm" onsubmit="return checkRegisterForm()">
+                    <form action="" class="registerForm"> 
+                      <div class="row">
+                        <div class="col my-2">
+                          <label class="my-2 fw-bold" for="user">Tên đăng nhập</label>
+                          <input type="text" placeholder="Tên đăng nhập" class="form-control" name="user" id="user">
+                          <span id="errUser" style="color: red; margin-top: 5px;"></span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col my-2">
+                          <label class="my-2 fw-bold" for="tel">Số điện thoại</label>
+                          <input type="text" placeholder="Số điện thoai" class="form-control" name="tel" id="tel">
+                        <span id="errTel" style="color: red; margin-top: 5px;"></span>
+                      </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col my-2">
+                          <label class="my-2 fw-bold" for="email">Email</label>
+                          <input  type="text" placeholder="Email" class="form-control" name="" id="email">
+                          <span id="errEmail" style="color: red; margin-top: 5px;"></span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col my-2">
+                          <label class="my-2 fw-bold" for="password">Mật khẩu</label>
+                          <input type="password" placeholder="Mật khẩu" class="form-control" name="password" id="password">
+                          <span id="errPassword" style="color: red; margin-top: 5px;"></span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col my-2">
+                          <label class="my-2 fw-bold" for="confirm-password">Nhập lại mật khẩu</label>
+                          <input type="password" placeholder="Mật khẩu" class="form-control" name="confirm-password" id="confirm-password">
+                          <span id="errConfirmPassword" style="color: red; margin-top: 5px;"></span>
+                        </div>
+                      </div>
+
+                      <div class="modal-footer border-0">
+                        <button type="submit" class="btn btn-primary" id="registerButton">Đăng ký</button>
+                        <button type="reset" class="btn btn-danger" data-bs-dismiss="modal">Thoát</button>
+                      </div>
+                    </form>
+                  </div>
+
+                  <!-- form lấy lại mật khẩu  -->
+                  <div class="tab-pane" form-reset-password id="passwordForm" >
+                    <div class="modal-header p-0 border-0">
+                      <button class="btn btn-close rounded-0" data-bs-dismiss="modal"> </button>
+                    </div>
+
+                    <form action="" class="formResetPassword">
+                      <div class="row">
+                        <div class="col my-2">
+                          <label class="my-2 fw-bold" for="re-email">Email</label>
+                          <input type="text" placeholder="Email" class="form-control" name="re-email" id="re-email">
+                          <span id="errRe-Email" style="color: red; margin-top: 5px;"></span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col my-2">
+                          <label class="my-2 fw-bold" for="reset-password">Mật khẩu</label>
+                          <input type="password" placeholder="Mật khẩu" class="form-control" name="reset-password" id="reset-password">
+                          <span id="errResetPassword" style="color: red; margin-top: 5px;"></span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col my-2">
+                          <label class="my-2 fw-bold" for="reset-confirm-password">Nhập lại mật khẩu</label>
+                          <input type="password" placeholder="Mật khẩu" class="form-control" name="reset-confirm-password" id="reset-confirm-password">
+                          <span id="errResetConfirmPassword" style="color: red; margin-top: 5px;"></span>
+                        </div>
+                      </div>
+
+                      <div class="modal-footer border-0" confirm-btn>
+                        <button value="required" type="submit" class="btn btn-primary" >Xác nhận</button>
+                        <button type="reset" class="btn btn-danger" return-login-form>Quay lại</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="logout" id="logout">
+                  <button class="btn btn-primary" id="logoutButton">Đăng xuất</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+        <!-- san pham -->  
+        <div class="container-fluid mt-3 mb-3" id="product">
+            <h3>Sách Văn Học</h3>
+            <hr>
+            <div class="row" id="sachvanhoc">
+
+            </div>
+            <h3>Sách Giáo Khoa</h3>
+            <hr>
+            <div class="row mt-4" id="sachgiaokhoa">
+                
+            </div>
+        </div>
+        <footer class="footer bg-info">
+            <div class="row gap-4 gap-lg-0">
+                <div class="col-md-3" id="aboutus">Về chúng tôi: <br><span>Chúng tôi là công ty cổ phần Toko.
+                    Trụ sở tọa lạc tại TpHCM</span>
+                <p>Bài tập lớn hệ thống công nghệ web 2024, Đề tài là Website bán sách, Thành viên thực hiện: <ul>
+                    <li>Đặng Trần Tấn Phát : 22649051</li>
+                    <li>Huỳnh Ánh Hưng :22645171</li>
+                </ul></p>
+                </div>
+                <div class="col-md-3">Liên hệ chúng tôi qua:
+                    <ul class="lh">
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/">
+ 
+                            <i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">Hổ trợ khách hàng
+                    <ul class="ht">
+                        <li>Các câu hỏi thường gặp</li>
+                        <li>Hướng dẫn đặt hàng</li>
+                        <li>Chính sách đổi trả</li>
+                        <li>Phương thức vận chuyển</li>
+                        <li>Chính sách nhập khẩu</li>
+                        <li>Hổ trợ khách hàng: <a href="https://www.google.com/intl/vi/gmail/about/">toko@gmail.vn.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3  ">Phương thức thanh toán <br>
+                    <img src="../IMG/method.png" alt="method">
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+<script>
+  let soluong=localStorage.getItem('totalQTY');
+  if(soluong==null){
+      soluong=0;
+  }
+  document.getElementById('cartSL').innerHTML = soluong;
+  let arrcart = localStorage.getItem('mycart');
+  if(arrcart==null){
+      arrcart=[];
+  }else{
+      arrcart = JSON.parse(localStorage.getItem('mycart'));
+  }
+  function addCart(objSP){
+      var sp = JSON.parse(objSP);
+      let flag = false;
+      let item ;
+      for(let i=0;i<arrcart.length;i++){
+        if(arrcart[i].sp.id==sp.id){
+              flag = true;
+              arrcart[i].qty++;
+              break;
+        }
+      }
+      if(flag==false){
+        let cartitem ={sp:sp, qty:1};
+          arrcart.push(cartitem);
+      }
+      
+      soluong++;
+      document.getElementById('cartSL').innerHTML = soluong;
+      localStorage.setItem('totalQTY',JSON.stringify(soluong));
+      localStorage.setItem('mycart',JSON.stringify(arrcart));
+  }
+  function xemchitiet(objsp){
+      localStorage.removeItem('chitiet');
+      localStorage.setItem('chitiet',objsp);
+      window.location.href = 'detailitem.html';
+  }
+</script>
