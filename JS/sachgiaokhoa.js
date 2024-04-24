@@ -1,6 +1,6 @@
 $(document).ready(function(){
     //Load 4 sản phẩm sách văn học vào trang chủ
-    $.getJSON('data/sachgiaokhoa.json',function(data){
+    $.getJSON('../data/sachgiaokhoa.json',function(data){
         for(let i=0;i<data.length;i++){
             var obj = JSON.stringify(data[i]);
             let item = data[i];
