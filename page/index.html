@@ -333,6 +333,8 @@
       document.getElementById('cartSL').innerHTML = soluong;
       localStorage.setItem('totalQTY',JSON.stringify(soluong));
       localStorage.setItem('mycart',JSON.stringify(arrcart));
+
+      alert('Đã thêm vào giỏ hàng');
   }
   function xemchitiet(objsp){
       localStorage.removeItem('chitiet');
